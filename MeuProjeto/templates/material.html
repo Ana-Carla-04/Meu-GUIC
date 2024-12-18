@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style_cabecalho.css') }} ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style_material.css') }}  ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style_material_exposto.css') }} ">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='imagens/icon-_1_.ico') }}  ">
+
+    <title>GUIC - Guia do Calouro</title>
+</head>
+
+<body>
+
+
+    <div class="visualizador">
+        <a class="back_doc">
+
+            <img src="{{ url_for('static', filename='imagens/x.svg') }} " alt="">
+        </a>
+        <div class="caixa_tela">
+            <iframe class="arquivo" src="{{ url_for('static', filename='meterial_apoio/Modelo_TCC PDF.pdf') }}  " type="application/pdf" width="auto"
+
+                height="auto"></iframe>
+        </div>
+    </div>
+
+    <div class="visualizador_2">
+        <a class="back_doc_2">
+
+            <img src="{{ url_for('static', filename='imagens/x.svg') }}   " alt="">
+        </a>
+        <div class="caixa_tela">
+            <iframe class="arquivo" src="{{ url_for('static', filename='meterial_apoio/Modelo_RELATORIO_DE_ESTAGIO.pdf') }}    " type="application/pdf"
+
+                width="auto" height="auto"></iframe>
+        </div>
+    </div>
+
+
+
+
+    <header class="header">
+        <nav class="cabecalho_flutuante">
+            <div class="flut">
+                <div class="caixa_flutuante" id="flutuante">
+                    <div class="boquin">
+                        <a href="" class="suap_caixa">SUAP</a>
+
+                        <img class="img_suap" src="{{ url_for('static', filename='imagens/suap.png') }}  ">
+                    </div>
+                    <div class="boquin">
+                        <a href="/" class="sair">Sair</a>
+                        <img class="img_sair" src="{{ url_for('static', filename='imagens/sair.svg') }}    ">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cabecalho">
+                <div class="icon_texto">
+
+                    <img class="logo_if" src="{{ url_for('static', filename='imagens/Logotipo.svg') }}   " alt="imagem da logo do IF">
+
+                    <div class="caixa_txt_cabecalho">
+                        <h4 class="texto_cabecalho">Educação, Ciência e Tecnologia do Rio Grande do Norte</h4>
+                    </div>
+                </div>
+                <div class="item_e_midia">
+                    <div class="midia">
+                        <a href="https://www.instagram.com/ifrnapodi/">
+
+                            <img class="img_insta" src="{{ url_for('static', filename='imagens/instagram.svg.svg') }}    "
+                                alt="imagem da logo do instagram">
+                        </a>
+                        <a href="https://www.facebook.com/ifrncampusapodi">
+                            <img class="img_facebook" src="{{ url_for('static', filename='imagens/facebook.svg.svg') }}    "
+                                alt="Imagem da logo do facebook">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCJJpMy5yo8fl7HH2ElVlF-A">
+                            <img class="img_youtube" src="{{ url_for('static', filename='imagens/youtube.svg.svg') }}  "
+
+                                alt="imagem da logo do youtube">
+                        </a>
+                    </div>
+
+                    <div class="menu_lateral">
+
+
+                        <img class="tres_linha" id="linhas" src="{{ url_for('static', filename='imagens/three-line.svg.svg') }}   " alt="três linhas">
+
+
+                        <a href="/homepage">
+                            <h3 class="texto_inicio">Início </h3>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="faixa_verde">
+                <a href="/homepage">
+
+                    <img class="img_back" src="{{ url_for('static', filename='imagens/back.svg') }}   ">
+
+                </a>
+                <div class="faixa">
+                    <h1 class="txt_fv">Material de Apoio</h1>
+                </div>
+                <div class="icone">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="conteudo">
+
+        <div class="bloco">
+            <div class="caixa_verde">
+
+                <img class="imagin" src="{{ url_for('static', filename='imagens/tcc.png') }}   " alt="imagem ilustrativa de um tcc">
+
+                <button class="visualizar" id="tcc">visualizar</button>
+            </div>
+            <div class="escribos">
+                <h1 class="titulo">TCC</h1>
+                <h3 class="subtitulo">Trabalho de conclusão de curso</h3>
+                <a href="{{ url_for('static', filename='meterial_apoio/Modelo_TCC.doc') }}  " download>
+                    <button id="tcc_bnt">
+
+                        <p class="nome_bnt">Baixe o modelo aqui</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="caxinha">
+            <div class="paragrafo">Aqui disponibilizamos um modelo da estrutura de um TCC, baixe o arquivo e transforme
+                no
+                seu TCC nota 1000.</div>
+        </div>
+
+        <div class="bloco">
+            <div class="caixa_verde">
+                <img class="imagin" src="{{ url_for('static', filename='imagens/tcc.png') }}    " alt="imagem ilustrativa de um relatorio">
+                <button class="visualizar" id="relatorio">visualizar</button>
+            </div>
+            <div class="escribos">
+                <h1 class="titulo">Relatório </h1>
+                <h3 class="subtitulo">Relatório de Estágio</h3>
+                <a href="{{ url_for('static', filename='meterial_apoio/Modelo_RELATORIO_DE_ESTAGIO.docx') }}    " download>
+                    <button id="relatorio_bnt">
+                        <p class="nome_bnt">Baixe o modelo aqui</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="caxinha">
+            <div class="paragrafo">Aqui disponibilizamos um modelo da estrutura de um relatório de estágio, baixe o
+                arquivo
+                e transforme no seu relatório de estágio perfeito.</div>
+        </div>
+    </div>
+
+    <footer>
+        <h6 class="chao">Copyright © 2024 | GuiC - Guia do Calouro</h6>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts/script.js') }} "></script>
+
+</body>
+
+</html>

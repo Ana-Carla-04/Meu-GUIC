@@ -1,0 +1,249 @@
+html{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f0ece9;
+}
+
+.faixa_verde{
+    background-color: #45A24F;
+    height: 60px;
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto_fverde{
+    margin: 0;
+    color: white;
+   
+}
+
+.video-background{
+    
+    object-fit: cover;
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top: solid white 141px;
+}
+
+
+.faixa_selecao{
+    width: 100wh;
+    background-color: #2f9e41;
+    display: grid;
+    grid-template-columns: 30% 30% 30% ;
+    justify-content: center;
+    border: #2f9e41 10px solid;
+
+    
+    margin-bottom: 80px;
+    gap: 30px;
+}
+
+
+
+
+.gg h2{
+   color: #1c2520; 
+   text-align: center;
+   
+    
+}
+
+.ggf h2{
+        color: #1c2520; 
+}
+.ggf{
+    display: flex;
+    border-right: solid #458937 2px;
+   border-left: solid #458937 2px ;
+   justify-content: center;
+}
+
+.gg {
+    display: flex;
+    
+   justify-content: center;
+}
+
+
+.faixa_verde_2{
+    background-color: #2F9E41;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto_bv{
+    color: white;
+    font-size: 30px;
+}
+
+.caixa_txt_img{
+    padding: 80px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.fontezinha{
+    font-family: "League Spartan", sans-serif;
+    font-size: 70px;
+}
+
+.foto_frente{
+    width: 50%;
+    border-radius: 20px;
+    border: solid rgb(47, 47, 47) 1px;
+}
+
+.texto_frente{
+    font-size: 25px;
+}
+
+.link{
+    color: black;
+    text-decoration: underline;
+}
+
+.suap, .portal, .wifi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.tres_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin: 40px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px black;
+
+}
+
+.ft_wifi{
+    width: 70px;
+}
+
+.ft_portal{
+    width: 50px;
+}
+
+.ft_suap{
+    width: 60px;
+}
+
+.input_avl{
+    color: black;
+    border-radius: 5px;
+    border-color: #737373;
+    height: 20px;
+    width: 200px;
+
+}
+
+.input_avl[type="text"]::placeholder{
+    color: #A6A6A6;
+}
+.avaliacaos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap:10px;
+    padding: 30px;
+}
+
+.estrelas{
+    display: flex;
+    float: right;
+    justify-content: center;
+}
+
+.estrelas input[type="radio"] {
+    display: none;
+}
+
+.star{
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover ~ .star,
+.star:hover  {
+    color: gold; /* Muda a cor das estrelas ao passar o mouse */
+}
+
+.estrelas input[type="radio"]:checked ~ .star {
+    color: gold; /* Mantém a cor dourada nas estrelas selecionadas */
+}
+
+.botao{
+    background-color: #dfdddd;
+    height: 20px;
+    width: 70px;
+    border: solid 2px;
+    border-color: #737373;
+    border-radius: 8px;
+}
+
+span{
+    color: red;
+}
+
+.txt{
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.dados_txt{
+    color: #737373;
+    font-size: 17px;
+}
+
+.caixa_anti_rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+
+.titles{
+    color: white;
+    font-size: 2.25rem;
+    position: absolute;
+    
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    
+    z-index: 3;
+   
+    margin-top: 310px;
+    
+    
+}
+
+.a_fts{
+    display: flex;
+    flex-direction: column;
+    align-items: CENTER;
+    
+}

@@ -1,0 +1,118 @@
+body{
+    background-color: #f0ece9;
+}
+
+.bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    margin-top: 170px;
+    margin-bottom: 40px;
+
+    
+}
+
+.caixa_verde{
+    background-color: #2F9E41;
+    width: 460px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+
+.bloco .caixa_verde .imagin{
+    width: 440px;
+    border-radius: 10px;
+}
+
+.bloco .caixa_verde:hover{
+    .imagin{filter: brightness(70%)};
+    .visualizar{display: block;}
+
+}
+.bloco .caixa_verde .visualizar{
+    position: absolute;
+    display: none;
+}
+
+.bloco .caixa_verde .visualizar:hover{
+    border: 2px white solid;
+    background-color: #3ac551;
+
+}
+
+.bloco .caixa_verde .visualizar:active{
+    font-size: 13px;
+}
+
+.escribos{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    font-weight: bold;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+.subtitulo{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+button{
+    
+    background: #1B9916;
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+.bloco .escribos a:hover{
+   border: rgb(123, 243, 99) 5px solid;
+    background-color: #3ac551;
+    border-radius: 15px;
+     
+}
+
+
+.paragrafo{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: solid 1px black;
+    width: 900px;
+    text-align: center;
+}
+
+.caxinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}

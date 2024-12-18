@@ -1,0 +1,259 @@
+
+
+
+.lista_setores{
+    margin-top: 190px;
+
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    gap: 40px ;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.lista_setores .caixa{
+    background-color: #45A24F;
+    
+
+    width: 400px;
+    height: 550px;
+
+    border-radius: 20px;
+    
+}
+
+.lista_setores .caixa .cx_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 380px;
+
+    
+}
+
+.lista_setores .caixa .cx_img .imagens{
+    object-fit: cover;
+
+    width: 320px;
+    height: 320px;
+
+
+}
+
+.lista_setores .caixa a .cx_txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.lista_setores .caixa a .cx_txt .texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    width: 320px;
+    height: 100px;
+    background-color: #378a40;
+    font-size: 30px;
+
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+}
+
+
+.lista_setores #adicionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista_setores #adicionar .bnt_adicionar img{
+    width: 150px;
+}
+
+.lista_setores #adicionar a{
+    background-color: #6ac675;
+    border-radius: 50%;
+    padding: 30px; 
+}
+
+
+.lista_setores #adicionar a:hover{
+    background-color: #9ac79f;
+    border-radius: 50%;
+    padding: 30px; 
+    border: solid 3px white;
+}
+
+.lista_setores #adicionar a:active{
+    background-color: #6ac675;
+    border-radius: 50%;
+    padding: 30px; 
+}
+
+
+
+
+/* tela de adicionar */
+
+
+
+.tela_adiconar{ 
+    display: none; 
+}
+    
+
+.tela_adiconar .caixa_tela{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000a4;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.tela_adiconar .caixa_tela .sair_formulario{
+    position: absolute;
+    z-index: 1001;
+    left: 1%;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    
+}
+
+.tela_adiconar .caixa_tela .sair_formulario img{
+    width: 60px;
+    
+}
+
+.tela_adiconar .caixa_tela .sair_formulario img:hover{
+    width: 65px;
+    
+    
+    
+}
+
+.tela_adiconar .caixa_tela .sair_formulario img:active{
+    width: 60px;
+    
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario{
+    width: 88%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+
+/* estilização do formulario */
+
+
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container {
+    padding: 30px;
+  
+    
+  
+}
+.tela_adiconar .caixa_tela .caixa_formulario .form-container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .limites_da_caixa{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .limites_da_caixa .juncao{
+    margin: 20px;
+    
+}
+
+
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+       
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form button{
+    background-color: #4CAF50; 
+    color: white; 
+    border-color: #45A24F;
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 10%;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form button:hover{
+    background-color: #89f18c; 
+    color: rgb(40, 122, 47); 
+    border-color: #ffffff;
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 10%;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form button:active{
+    background-color: #4CAF50; 
+    color: white; 
+    border-color: #45A24F;
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 10%;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .campo_foto{
+    
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .campo_foto .foto_fundo{
+    border:5px ridge #3fc64f;
+    width: 400px;
+    height: 200px;
+
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .campo_foto .foto_card{
+    border:5px ridge #3fc64f;
+    width: 200px;
+    height: 200px;
+    
+}
+
+

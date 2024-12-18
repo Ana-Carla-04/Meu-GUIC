@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style.setores.css') }}  ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style_cabecalho.css') }}   ">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='imagens/icon-_1_.ico') }}  ">
+
+    <title>GUIC - Guia do Calouro</title>
+</head>
+
+<body>
+
+
+    <div class="tela_adiconar" id="telinha">
+        <div class="caixa_tela">
+            <a class="sair_formulario" id="bnt_sair">
+                <img src="{{ url_for('static', filename='imagens/back.svg') }}    " alt="">
+            </a>
+            <div class="caixa_formulario">
+                <div class="form-container">
+                    <h1>Setores</h1>
+                    <form action="/submit" method="post" enctype="multipart/form-data">
+                        <div class="limites_da_caixa">
+                        <div class="juncao">
+                        <label for="foto">Foto</label>
+                        <input type="file" id="foto" name="foto" ><br>
+                        </div>
+
+                        <div class="juncao">
+                        <label for="nome">Nome do setor</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o nome do setor" required><br>
+                        </div>
+
+                        <div class="juncao">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" id="descricao" name="descricao" placeholder="Descreva a função do setor" required><br>
+                        </div>
+
+                        <div class="juncao">
+                        <label for="responsaveis">Responsáveis</label>
+                        <input type="text" id="responsaveis" name="responsaveis" placeholder="Digite os responsáveis" required><br>
+                        </div>
+
+                        <div class="juncao">
+                        <label for="email">Contato Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite o Email de contato" required><br>
+                        </div>
+
+                        <div class="juncao">
+                        <label for="numero">Contato Número</label>
+                        <input type="number" id="numero" name="numero" placeholder="Numero de telefone de contato" ><br>
+                        </div>
+
+                        <div class="juncao">
+                        <label for="autorizacao">Autorização</label>
+                        <input type="number" id="autorizacao" name="autorizacao" placeholder="Digite sua matricula" required><br>
+                        </div>
+                        </div>
+
+                        <div class="campo_foto">
+                            <div class="foto_fundo">
+                                <img src="" alt="">
+                            </div>
+                            <div class="foto_card">
+                                <img src="" alt="">
+                            </div>
+                            
+                        </div>
+
+                        <button type="submit" >Enviar</button>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="cabecalho_flutuante">
+        <div class="flut">
+            <div class="caixa_flutuante" id="flutuante">
+                <div class="boquin">
+                    <a href="" class="suap_caixa">SUAP</a>
+
+                    <img class="img_suap" src="{{ url_for('static', filename='imagens/suap.png') }}   ">
+                </div>
+                <div class="boquin">
+                    <a href="/" class="sair">Sair</a>
+                    <img class="img_sair" src="{{ url_for('static', filename='imagens/imagens/sair.svg') }}   ">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cabecalho">
+            <div class="icon_texto">
+
+                <img class="logo_if" src="{{ url_for('static', filename='imagens/Logotipo.svg') }} " alt="imagem da logo do IF">
+
+                <h4 class="texto_cabecalho">Educação, Ciência e Tecnologia do Rio Grande do Norte</h4>
+            </div>
+            <div class="item_e_midia">
+                <div class="midia">
+                    <a href="https://www.instagram.com/ifrnapodi/">
+                        <img class="img_insta" src="{{ url_for('static', filename='imagens/instagram.svg.svg') }}  "
+                            alt="imagem da logo do instagram">
+                    </a>
+                    <a href="https://www.facebook.com/ifrncampusapodi">
+                        <img class="img_facebook" src="{{ url_for('static', filename='imagens/facebook.svg.svg') }}  "
+                            alt="Imagem da logo do facebook">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCJJpMy5yo8fl7HH2ElVlF-A">
+                        <img class="img_youtube" src="{{ url_for('static', filename='imagens/youtube.svg.svg') }}  " alt="imagem da logo do youtube">
+
+                    </a>
+                </div>
+
+                <div class="menu_lateral">
+
+
+                    <img class="tres_linha" id="linhas" src="{{ url_for('static', filename='imagens/three-line.svg.svg') }}  " alt="três linhas">
+
+
+                    <a href="/homepage">
+                        <h3 class="texto_inicio">Início </h3>
+                    </a>
+
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="faixa_verde">
+            <a href="/homepage">
+
+                <img class="img_back" src="{{ url_for('static', filename='imagens/back.svg') }}  ">
+
+            </a>
+            <div class="faixa">
+                <h1 class="txt_fv">Servidores</h1>
+            </div>
+            <div class="icone">
+                <img src="" alt="">
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <div class="lista_setores">
+
+        <div class="caixa">
+            <div class="cx_img">
+
+                <img class="imagens" src="{{ url_for('static', filename='imagens/auditorio-F.png') }}  " alt="foto da biblioteca">
+
+            </div>
+
+            <a href="/auditorio">
+                <div class="cx_txt">
+                    <h3 class="texto">Auditório Luiza<br> Cantofa</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+
+                <img class="imagens" src="{{ url_for('static', filename='imagens/almoxarifado-F.png') }} " alt="foto da biblioteca">
+
+            </div>
+            <a href="/almoxarifado">
+                <div class="cx_txt">
+                    <h3 class="texto">Almoxarifado</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+
+                <img class="imagens" src="{{ url_for('static', filename='imagens/biblioteca.png') }}     " alt="foto da biblioteca">
+            </div>
+            <a href="/biblioteca">
+                <div class="cx_txt">
+                    <h3 class="texto">Biblioteca José Leite</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+
+                <img class="imagens" src="{{ url_for('static', filename='imagens/coapac-F.png') }}   " alt="foto da biblioteca">
+
+            </div>
+            <a href="/coapac">
+                <div class="cx_txt">
+                    <h3 class="texto">COAPAC</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/CED">
+                <div class="cx_txt">
+                    <h3 class="texto">Coordenação de Estágio Docente</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/CE">
+                <div class="cx_txt">
+                    <h3 class="texto">Coordenação de Extensão</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/etep-F.png') }}   " alt="foto da biblioteca">
+            </div>
+            <a href="/ETEP">
+                <div class="cx_txt">
+                    <h3 class="texto">ETEP</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="lab_pesquisa">
+                <div class="cx_txt">
+                    <h3 class="texto">Laboratório de Pesquisa</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/miniauditorio-F.png') }}  " alt="foto da biblioteca">
+            </div>
+            <a href="/miniauditorio">
+                <div class="cx_txt">
+                    <h3 class="texto">Miniauditório</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/napni-F.png') }}   " alt="foto da biblioteca">
+            </div>
+            <a href="/NAPNE">
+                <div class="cx_txt">
+                    <h3 class="texto">NAPNE</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/NEABI">
+                <div class="cx_txt">
+                    <h3 class="texto">NEABI</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/nulic-F.png') }}     " alt="foto da biblioteca">
+            </div>
+            <a href="/NULIC">
+                <div class="cx_txt">
+                    <h3 class="texto">NULIC</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="psicologia">
+                <div class="cx_txt">
+                    <h3 class="texto">Psicologia</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/servico_social">
+                <div class="cx_txt">
+                    <h3 class="texto">Serviço Social</h3>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/setor_saude">
+                <div class="cx_txt">
+                    <h3 class="texto">Setor de Saúde</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/TI">
+                <div class="cx_txt">
+                    <h3 class="texto">TI</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/cord_esporte">
+                <div class="cx_txt">
+                    <h3 class="texto">Coordenação de Esporte</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/GEJA">
+                <div class="cx_txt">
+                    <h3 class="texto">Grêmio Estudantiu José de Alencar</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/CCLQ">
+                <div class="cx_txt">
+                    <h3 class="texto">Coordenação do Curso de Licenciatura em Química</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/CPI">
+                <div class="cx_txt">
+                    <h3 class="texto">Coordenação de Pesquisa e Inovação</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/secretaria_academica">
+                <div class="cx_txt">
+                    <h3 class="texto">Secretaria Acadêmica</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/diretoria_academica">
+                <div class="cx_txt">
+                    <h3 class="texto">Diretoria Acadêmica</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/comuni_event">
+                <div class="cx_txt">
+                    <h3 class="texto">Comunicação Social e Eventos</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/gabinete_direcao_g">
+                <div class="cx_txt">
+                    <h3 class="texto">Gabinete da Direção Geral</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="caixa">
+            <div class="cx_img">
+                <img class="imagens" src="{{ url_for('static', filename='imagens/logo guic.png') }}     /static/imagens/FALTA AS FOTOS.png" alt="foto da biblioteca">
+            </div>
+            <a href="/cord_agro">
+                <div class="cx_txt">
+                    <h3 class="texto">Coordenação de Agropecuária</h3>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="caixa" id="adicionar">
+            <a class="bnt_adicionar" id="bnt_add">
+                <img src="{{ url_for('static', filename='imagens/icon_adicionar.svg') }}  " alt="">
+            </a>
+            
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <footer>
+        <h6 class="chao">Copyright © 2024 | GuiC - Guia do Calouro</h6>
+    </footer>
+
+
+
+    <script src="{{ url_for('static', filename='scripts/script.js') }}  "></script>
+
+
+</body>
+
+</html>

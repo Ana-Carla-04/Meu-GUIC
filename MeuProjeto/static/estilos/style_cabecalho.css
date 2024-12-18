@@ -1,0 +1,188 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.suap_caixa, .sair{
+    color: white;
+    text-decoration: underline;
+}
+
+.img_sair{
+    width: 25px;
+    margin-left: 22px;
+}
+
+
+.img_suap{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.caixa_flutuante{
+    float: left;
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    background-color: #737373;
+    z-index: 3;
+    right: 20px;
+    top: 60px;
+    padding: 13px;
+    border-radius: 10px;
+    
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.cabecalho{
+    border-bottom: 2px solid rgb(105, 103, 103);
+    background-color: white;
+}
+
+.cabecalho .icon_texto{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho .icon_texto .logo_if{
+    width: 25px;
+
+}
+
+.cabecalho .icon_texto .caixa_txt_cabecalho{
+    width: 250px;
+}
+
+.cabecalho .icon_texto .caixa_txt_cabecalho .texto_cabecalho{
+    margin: 0;
+    color: #737373
+}
+
+
+
+
+.img_insta, .img_facebook, .img_youtube{
+    width: 20px;
+}
+
+.tres_linha{
+    width: 22px;
+    cursor: pointer;
+}
+
+.texto_inicio{
+    color:#737373;
+}
+
+.menu_lateral{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item_e_midia{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+footer{
+    background-color: #737373;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chao{
+    color: white;
+}
+
+
+
+
+
+
+.faixa_verde{
+    background-color: #45A24F;
+    width: 100%;
+    height: 55px;
+    display: grid;
+    grid-template-columns: repeat(1, 70px 800px 70px);
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.faixa_verde a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faixa_verde a .img_back{
+    width: 55px;
+}
+
+.faixa_verde a .img_back:active{
+    width: 50px;
+}
+
+.faixa_verde .faixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faixa_verde .faixa .txt_fv{
+    margin: 0;
+    color: white;
+}
+
+.faixa_verde .icone img{
+    width: 60px;
+}
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+/* 
+header.rolagem{
+    height: 70px;
+} */
+/* 
+.rolagem{
+    height: 700px;
+    background-color: blue;
+}
+
+.cabecalho.rolagem{
+    background-color: aqua;
+    height: 400px;
+} */

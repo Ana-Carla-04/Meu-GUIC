@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style_login.css') }}">
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='imagens/icon-_1_.ico') }}">
+
+    
+    <title>GUIC - Guia do Calouro</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="caixa_branca">
+            <div class="primeira">
+                <img class="logo_guic" src="{{ url_for('static', filename='imagens/logo guic.png') }}"     >
+            </div>
+            <div class="segunda">
+                <img class="logo_if" src="{{ url_for('static', filename='imagens/logo-vertical.svg') }}">
+
+            </div>
+        </div>
+
+        <div class="caixa_verde">
+            <div class="titulos">
+                <h1 class="titulo">Login</h1>
+                <h4 class="subtitulo">Acesse com SUAP:</h4>
+            </div>
+            <div class="inserts">
+                <form action="/login" method="POST">
+                    <div class="matricula">
+                        <h5 class="nome_mat">Matrícula:</h5>
+                        <div class="input_container">
+
+                            <img src="{{ url_for('static', filename='imagens/user.svg') }}" class="icon_user">
+
+                            <input class="inputizinho" id="matricula" type="text" name="matricula" required>
+                        </div>
+                    </div>
+                    <div class="senha">
+                        <h5 class="nome_senh">Senha:</h5>
+                        <div class="input_container">
+                            <img src="{{ url_for('static', filename='imagens/lock.svg') }}" class="icon_user">
+                            <input class="inputizinho" id="senha" type="password" name="senha" required>
+                        </div>
+                    </div>
+                    <div class="butao">
+                        <button class="but" type="submit">Acessar com o Suap</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/GUICZINHO/static/scripts/cenxao_suap.js"></script>
+    <script src="/GUICZINHO/static/scripts/client.js"></script>
+    <script src="/GUICZINHO/static/scripts/js.cookie.js"></script>
+    <script src="/GUICZINHO/static/scripts/script.js"></script>
+    <script src="/GUICZINHO/static/scripts/settings.sample.js"></script>
+
+    <script>
+        var suap = new SuapClient(SUAP_URL, CLIENT_ID, REDIRECT_URI, SCOPE);
+        suap.init();
+        $(document).ready(function () {
+            $("#botao-login-suap").attr('href', suap.getLoginURL());
+        })
+    </script>
+
+</body>
+
+</html>

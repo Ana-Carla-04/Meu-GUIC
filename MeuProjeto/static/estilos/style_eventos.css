@@ -1,0 +1,402 @@
+
+
+html{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #f0ece9;
+    margin-top: 150px;
+    
+}
+.container{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    width: 1020px;
+    height: 580px;
+    
+}
+
+
+.container .list-banner-atras{
+    
+    display: grid;
+    grid-template-columns: repeat(1, 280px 325px 280px);
+    justify-content: center;
+    align-items: center;
+    width: 1020px;
+    height: 580px;
+    gap: 25px;
+    margin: 8px;
+    
+}
+
+
+
+.container .list-banner-atras .objct img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+   
+}
+
+
+.container .list-banner-atras .objct:nth-child(1){
+    filter: brightness(60%);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border: solid 10px rgba(34, 165, 38);
+    border-radius: 30px;
+
+    
+}
+
+.container .list-banner-atras .objct:nth-child(2){
+    height: 550px;
+    width: 325px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border: solid 5px rgba(34, 165, 38);
+    border-radius: 25px;
+}
+
+.container .list-banner-atras .objct:nth-child(3){
+    filter: brightness(60%);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border: solid 10px rgb(34, 165, 38);
+    border-radius: 30px;
+}
+
+
+.list-acessos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 250px;
+    overflow: hidden;
+}
+
+.list-acessos .acesso{
+    background-color: #1b9916;
+    width: 250px;
+    height: 55px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.list-acessos .acesso a{
+    width: 250px;
+    height: 55px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* text-decoration: revert; */
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.tudo{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.tudo .botons{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tudo .botons{
+    width: 100%;
+    height: 100%;
+}
+
+
+.tudo .botons .botao {
+    width: 100px;
+    height: 100px;
+}
+.tudo .botons button{
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+}
+
+.tudo .botons button:hover{
+    border-radius: 50%;
+    border: none;
+    width: 105px;
+    height: 105px; 
+    background-color: transparent;
+    transition: 0.3s;
+   
+}
+
+.tudo .botons button:active{
+    border-radius: 50%;
+    border: none;
+    width: 105px;
+    height: 105px; 
+    background-color:rgb(95, 98, 96);
+    transition: 0.3s;
+   
+}
+
+.tudo .botons .botao img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+}
+
+/* moviemnto animado */
+
+.container.next .objct:nth-child(2){
+    animation: efeitonext 0.3s linear 1 forwards;
+
+}
+
+.container.back .objct:nth-child(2){
+    animation: efeitonext 0.3s linear 1 forwards;
+
+}
+
+.container.back .objct:nth-child(1){
+    animation: efeitoback 0.4s linear 1 forwards;
+
+}
+
+.container.next .objct:nth-child(1){
+    animation: efeitoback 0.4s linear 1 forwards;
+
+}
+.container.back .objct:nth-child(3){
+    animation: efeitoback 0.4s linear 1 forwards;
+
+}
+
+
+.container.next .objct:nth-child(3){
+    animation: efeitoback 0.4s linear 1 forwards;
+
+}
+@keyframes efeitoback {
+    from {
+        width: 270px;
+        height: 480px;
+
+    }
+}
+
+@keyframes efeitonext {
+    from {
+        width: 330px;
+        height: 555px;
+
+    }
+}
+
+
+
+.tudo .botons .list-bolinhas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.tudo .botons .list-bolinhas .boll{
+    width: 20px;
+    height: 20px;
+    background-color: #1b9916;
+    border-radius: 50%;
+}
+
+.tudo .botons .list-bolinhas #selecionada{
+    width: 25px;
+    height: 25px;
+    background-color: #10500e;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/* tela de adicionar */
+
+
+
+.tela_adiconar{ 
+    display: none; 
+}
+    
+
+.tela_adiconar .caixa_tela{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000a4;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.tela_adiconar .caixa_tela .sair_formulario{
+    position: absolute;
+    z-index: 1001;
+    left: 1%;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    
+}
+
+.tela_adiconar .caixa_tela .sair_formulario img{
+    width: 60px;
+    
+}
+
+.tela_adiconar .caixa_tela .sair_formulario img:hover{
+    width: 65px;
+    
+    
+    
+}
+
+.tela_adiconar .caixa_tela .sair_formulario img:active{
+    width: 60px;
+    
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario{
+    width: 88%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+
+/* estilização do formulario */
+
+
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container {
+    padding: 30px;
+  
+    
+  
+}
+.tela_adiconar .caixa_tela .caixa_formulario .form-container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .limites_da_caixa{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .limites_da_caixa .juncao{
+    margin: 15px;
+    
+}
+
+
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+       
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form button{
+    background-color: #4CAF50; 
+    color: white; 
+    border-color: #45A24F;
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 10%;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form button:hover{
+    background-color: #89f18c; 
+    color: rgb(40, 122, 47); 
+    border-color: #ffffff;
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 10%;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form button:active{
+    background-color: #4CAF50; 
+    color: white; 
+    border-color: #45A24F;
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 10%;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .campo_foto{
+    
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .campo_foto .foto_fundo{
+    border:5px ridge #3fc64f;
+    width: 400px;
+    height: 200px;
+
+}
+
+.tela_adiconar .caixa_tela .caixa_formulario .form-container form .campo_foto .foto_card{
+    border:5px ridge #3fc64f;
+    width: 200px;
+    height: 200px;
+    
+}
+
+

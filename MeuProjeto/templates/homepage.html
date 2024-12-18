@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style_cabecalho.css') }}    ">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/style_inicio.css') }}">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='imagens/icon-_1_.ico') }} ">
+
+
+    <title>GUIC - Guia do Calouro</title>
+</head>
+
+<body>
+    <nav class="cabecalho_flutuante">
+        <div class="flut">
+            <div class="caixa_flutuante" id="flutuante">
+                <div class="boquin">
+                    <a href="https://suap.ifrn.edu.br/accounts/login/?next=/" class="suap_caixa">SUAP</a>
+
+                    <img class="img_suap" src="{{ url_for('static', filename='imagens/suap.png') }} ">
+                </div>
+                <div class="boquin">
+                    <a href="/" class="sair">Sair</a>
+                    <img class="img_sair" src="{{ url_for('static', filename='imagens/sair.svg') }} ">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cabecalho">
+            <div class="icon_texto">
+
+                <img class="logo_if" src="{{ url_for('static', filename='imagens/Logotipo.svg') }} " alt="imagem da logo do IF">
+
+                <h4 class="texto_cabecalho">Educação, Ciência e Tecnologia do Rio Grande do Norte</h4>
+            </div>
+            <div class="item_e_midia">
+                <div class="midia">
+                    <a href="https://www.instagram.com/ifrnapodi/">
+
+                        <img class="img_insta" src="{{ url_for('static', filename='imagens/instagram.svg.svg') }} "
+                            alt="imagem da logo do instagram">
+                    </a>
+                    <a href="https://www.facebook.com/ifrncampusapodi">
+                        <img class="img_facebook" src="{{ url_for('static', filename='imagens/facebook.svg.svg') }} "
+                            alt="Imagem da logo do facebook">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCJJpMy5yo8fl7HH2ElVlF-A">
+                        <img class="img_youtube" src="{{ url_for('static', filename='imagens/youtube.svg.svg') }} " alt="imagem da logo do youtube">
+
+                    </a>
+                </div>
+
+                <div class="menu_lateral">
+
+
+                    <img class="tres_linha" id="linhas" src="{{ url_for('static', filename='imagens/three-line.svg.svg') }} " alt="três linhas">
+
+
+                    <a href="/homepage">
+                        <h3 class="texto_inicio">Início </h3>
+                    </a>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="faixa_verde">
+            <h1 class="texto_fverde">GuiC - Guia do Calouro </h1>
+        </div>
+    </nav>
+
+
+    <div class="corpo">
+
+        <div class="caixa_video">
+
+            <img src="{{ url_for('static', filename='imagens/fundo guic.png') }}  " class="video-background" autoplay muted loop
+
+                id="video-background">
+
+            <div class="faixa_selecao">
+                <div class="d">
+                    <a href="/setores" class="gg">
+                        <h2>Setores</h2>
+                    </a>
+                </div>
+                <div class="d">
+                    <a href="/eventos" class="ggf">
+                        <h2>Eventos</h2>
+                    </a>
+                </div>
+                <div class="d">
+                    <a href="/material" class="gg">
+                        <h2>Material de Apoio</h2>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="faixa_verde_2">
+                <h2 class="texto_bv">Bem-vindo ao Campus Apodi!</h2>
+            </div>
+            <div class="caixa_txt_img">
+                <div class="texto_frente">
+                    <h1 class="fontezinha">novato, perdido & curioso?</h1>
+
+                    <h4>O Guia IFRN é um espaço criado por alunos do Campus Apodi que permite auxiliar calouros ou
+                        qualquer outro que necessite de ajuda.</h4>
+
+                    <h4>Eventos que acontecem no campus, localização de setores e modelos de TCC e relatórios de Prática
+                        Profissional em um único lugar.</h4>
+                </div>
+
+                <img class="foto_frente" src="{{ url_for('static', filename='imagens/foto campus pg1.png') }} " alt="foto ilustrativa do campus">
+            </div>
+            <div class="tres_links">
+                <div class="wifi">
+                    <img class="ft_wifi" src="{{ url_for('static', filename='imagens/wifi.png') }}  ">
+                    <a class="link" href="">Conectar a rede wifi</a>
+                </div>
+                <div class="portal">
+                    <img class="ft_portal" src="{{ url_for('static', filename='imagens/Logotipo.svg') }} ">
+                    <a class="link" href="https://portal.ifrn.edu.br/campus/apodi/">Acesso ao Portal IFRN</a>
+                </div>
+                <div class="suap">
+                    <img class="ft_suap" src="{{ url_for('static', filename='imagens/suap.png') }} ">
+
+                    <a class="link" href="https://suap.ifrn.edu.br/accounts/login/?next=/">Acesso ao suap</a>
+                </div>
+            </div>
+            <form id="avalicaoForm">
+
+                <div class="avaliacaos">
+                    <label for="avaliacao">Deixe sua sujestão</label>
+                    <input type="text" id="avaliacao" name="avaliacao" class="input_avl">
+
+                    <div class="estrelas">
+
+                        <input class="5_star" type="radio" name="estrelas" value="5">
+                        <label for="5_star" class="star">&#9733;</label>
+                        <input class="4_star" type="radio" name="estrelas" value="4">
+                        <label for="4_star" class="star">&#9733;</label>
+                        <input class="3_star" type="radio" name="estrelas" value="3">
+                        <label for="3_star" class="star">&#9733;</label>
+                        <input class="2_star" type="radio" name="estrelas" value="2">
+                        <label for="2_star" class="star">&#9733;</label>
+                        <input class="1_star" type="radio" name="estrelas" value="1">
+                        <label for="1_star" class="star">&#9733;</label>
+
+                        <div class="bnt_submit">
+                            <button class="botao" type="submit">Enviar</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+            <div class="caixa_anti_rodape">
+
+                <img src="{{ url_for('static', filename='imagens/logo-vertical.svg') }} " alt="foto de logo na vertical">
+
+                <div class="dados">
+                    <p class="txt">Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus
+                        Apodi
+                    </p>
+                    <p class="dados_txt">hapada do Apodi - RN - 233, km 02 - n° 1000, Apodi - RN</p>
+                    <p class="dados_txt">CEP: 59700-000</p>
+                    <p class="dados_txt">E-mail: seac.ap@ifrn.edu.br
+                    </p>
+                    <p class="dados_txt">Telefone:(84) 4005-4101 </p>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h6 class="chao">Copyright © 2024 | GuiC - Guia do Calouro</h6>
+        </footer>
+
+        <script src="{{ url_for('static', filename='scripts/cenxao_suap.js') }} "></script>
+        <script src="{{ url_for('static', filename='scripts/client.js') }} "></script>
+        <script src="{{ url_for('static', filename='scripts/js.cookie.js') }}  "></script>
+        <script src="{{ url_for('static', filename='scripts/script.js') }}  "></script>
+        <script src="{{ url_for('static', filename='scripts/settings.sample.js') }}  "></script>
+
+
+
+
+</body>
+
+</html>
