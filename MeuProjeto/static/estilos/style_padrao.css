@@ -1,0 +1,80 @@
+
+/* .conteudo{
+    margin-top: 150px;
+} */
+
+.foto{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(0.4);
+    display: flex;
+    
+}
+
+.titulos_frente{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.container_1{
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.textinho{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafo{
+    font-size: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 70px;
+}
+
+.horario h3{
+    font-size: 30px;
+}
+
+.caixa p{
+    font-size: 20px;
+}
+
+
+.horario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.caixa{
+    width: 30%;
+    height: 150px;
+}
+
+.faixa_verde .icone{
+    position: absolute;
+    z-index: 2;
+    right: 30px
+}
+
+.faixa_verde .icone .imag{
+    width: 40px;
+    
+    
+}

@@ -19,12 +19,13 @@ linhas.onclick = function(){
 }
 
 
-
 window.onclick = function(event) {
-    if (event.target === janela) {
-        janela.style.display = "block"
+    if (event.target !== linhas && event.target !== janela) {
+        janela.style.display = "none";
     }
-}
+};
+
+
 
 
 
@@ -112,7 +113,7 @@ function movimentarIntens(type){
 
     setTimeout(() => {
         contudo.classList.remove('next')
-        contudo.classList.remove('next')
+        contudo.classList.remove('back')
     }, 3000)
 
 }
